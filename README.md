@@ -1,4 +1,4 @@
-# DevConnector tutorial with BTC415 && Steven 
+# DevConnector tutorial for basic MERN concepts
 
 > Social network for developers
 
@@ -186,7 +186,7 @@ The maintainers of Moment.js now recommend finding an alternative to their packa
 
 Some of you in the course have been having problems installing both packages and meeting peer dependencies.\
  We can instead use the browsers built in [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) API.\
- First create a [ utils/formatDate.js ](https://github.com/BTC415/DevConnector/blob/master/client/src/utils/formatDate.js) file, with the following code...
+ First create a [ utils/formatDate.js ](https://github.com/marksantiago02/DevConnector/blob/master/client/src/utils/formatDate.js) file, with the following code...
 
 ```javascript
 function formatDate(date) {
@@ -196,7 +196,7 @@ function formatDate(date) {
 export default formatDate;
 ```
 
-Then in our [Education.js](https://github.com/BTC415/DevConnector/blob/master/client/src/components/dashboard/Education.js) component, import the new function...
+Then in our [Education.js](https://github.com/marksantiago02/DevConnector/blob/master/client/src/components/dashboard/Education.js) component, import the new function...
 
 ```javascript
 import formatDate from '../../utils/formatDate';
@@ -213,12 +213,12 @@ And use it instead of Moment...
 So wherever you use `<Moment />` you can change to use the `formatDate` function.\
 Files to change would be...
 
-- [Education.js](https://github.com/BTC415/DevConnector/blob/master/client/src/components/dashboard/Education.js)
-- [Experience.js](https://github.com/BTC415/DevConnector/blob/master/client/src/components/dashboard/Experience.js)
-- [CommentItem.js](https://github.com/BTC415/DevConnector/blob/master/client/src/components/post/CommentItem.js)
-- [PostItem.js](https://github.com/BTC415/DevConnector/blob/master/client/src/components/posts/PostItem.js)
-- [ProfileEducation.js](https://github.com/BTC415/DevConnector/blob/master/client/src/components/profile/ProfileEducation.js)
-- [ProfileExperience.js](https://github.com/BTC415/DevConnector/blob/master/client/src/components/profile/ProfileExperience.js)
+- [Education.js](https://github.com/marksantiago02/DevConnector/blob/master/client/src/components/dashboard/Education.js)
+- [Experience.js](https://github.com/marksantiago02/DevConnector/blob/master/client/src/components/dashboard/Experience.js)
+- [CommentItem.js](https://github.com/marksantiago02/DevConnector/blob/master/client/src/components/post/CommentItem.js)
+- [PostItem.js](https://github.com/marksantiago02/DevConnector/blob/master/client/src/components/posts/PostItem.js)
+- [ProfileEducation.js](https://github.com/marksantiago02/DevConnector/blob/master/client/src/components/profile/ProfileEducation.js)
+- [ProfileExperience.js](https://github.com/marksantiago02/DevConnector/blob/master/client/src/components/profile/ProfileExperience.js)
 
 If you're updating your project you will now be able to uninstall **react-moment** and **moment** as project dependencies.
 
